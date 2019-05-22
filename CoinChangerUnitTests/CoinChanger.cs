@@ -7,7 +7,7 @@ namespace coinChanger
 {
     public class MakeChange
     {
-        public static int[] calculateChange(int amount)
+        public int[] calculateChange(int amount)
         {
             var remainder = amount;
             List<int> change = new List<int>();
