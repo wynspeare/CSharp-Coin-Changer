@@ -7,7 +7,7 @@ namespace coinChanger
 {
     public class MakeChange
     {
-        public int[] calculateChange(int amount)
+        public List<int> calculateChange(int amount)
         {
             var remainder = amount;
             List<int> change = new List<int>();
@@ -42,12 +42,11 @@ namespace coinChanger
                     remainder--;
                 }
             }
-            int[] convertedChange = change.ToArray();
-            displayChange(convertedChange, amount);
-            return convertedChange;
+            displayChange(change, amount);
+            return change;
         }
 
-        public static void displayChange(int[] change, int amount)
+        public static void displayChange(List<int> change, int amount)
         {
             Console.WriteLine("\nYou have this much change for {0}:", amount);
             foreach (int coin in change)
