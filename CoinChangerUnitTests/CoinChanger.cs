@@ -1,55 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
-
+using System.Linq;
 
 namespace coinChanger
 {
     public class MakeChange
     {
-        public Dictionary<string, int> calculateChange(int amount)
+
+        List<int> change = new List<int>();
+        static readonly int[] possibleCoins = { 25, 10, 5, 1 };
+
+        public List<int> calculateChange(int amount)
         {
             var remainder = amount;
-            Dictionary<string, int> change =  new Dictionary<string, int>(); 
-
-            while (remainder != 0)
+            foreach (int coin in possibleCoins)
             {
-                if (remainder >= 25) 
+                if (remainder >= coin)
                 {
-                    int numberOfQuarters = remainder / 25;
-                    change.Add("Quarter", numberOfQuarters); 
-                }
-
-                else if (remainder >= 10)
-                {
-                    int numberOfDimes = remainder / 10;
-                    change.Add("Dime", numberOfDimes); 
-                }
-                else if (remainder >= 5)
-                {
-                    change.Add("Nickel", 1);
-                    remainder -= 5;
-                }
-                else
-                {
-                    change.Add("Penny", remainder);
-                    remainder = 0;
+                    int numberOfCoins = remainder / coin;
+                    change.AddRange(Enumerable.Repeat(coin, numberOfCoins));
+                    remainder -= (coin * numberOfCoins);
                 }
             }
             return change;
         }
+
+        public Dictionary<int, int> countChange()
+        {
+            var coinCounts = new Dictionary<int, int>();
+			foreach (int coin in change)
+			{
+                if (!coinCounts.ContainsKey(coin))
+                {
+                    coinCounts[coin] = 1;
+                }
+                else
+                {
+                    coinCounts[coin] += 1;
+                }
+			}
+            return coinCounts;
+        }
         
         public string displayChange(int amount)
         {
-            var change = calculateChange(amount);
-            var returnedChange = String.Format("{0} has been converted to the following coins: ", amount);
-			foreach (KeyValuePair<string, int> coin in change)
+            var coinCounts = countChange();
+            var returnedChange = String.Format("{0} has been converted to the following coins:\n", amount);
+			foreach (KeyValuePair<int, int> coin in coinCounts)
 			{
-                returnedChange += "x" + coin.Value.ToString() + " " + coin.Key + " ";
+                returnedChange += "x" + coin.Value.ToString() + " " + coin.Key + "\n";
 			}
             Console.WriteLine(returnedChange);
             return returnedChange;
-            
         }
+
     }
 }
