@@ -1,0 +1,14 @@
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/CoinChangerUnitTests.deps.json
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/CoinChangerUnitTests.runtimeconfig.json
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/CoinChangerUnitTests.runtimeconfig.dev.json
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/CoinChangerUnitTests.dll
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/bin/Debug/netcoreapp2.1/CoinChangerUnitTests.pdb
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/obj/Debug/netcoreapp2.1/CoinChangerUnitTests.csprojAssemblyReference.cache
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/obj/Debug/netcoreapp2.1/CoinChangerUnitTests.csproj.CoreCompileInputs.cache
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/obj/Debug/netcoreapp2.1/CoinChangerUnitTests.AssemblyInfoInputs.cache
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/obj/Debug/netcoreapp2.1/CoinChangerUnitTests.AssemblyInfo.cs
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/obj/Debug/netcoreapp2.1/CoinChangerUnitTests.dll
+/Users/carolinecessaro/Documents/Katas/C#/CoinChanger/CoinChangerUnitTests/obj/Debug/netcoreapp2.1/CoinChangerUnitTests.pdb
